@@ -1,0 +1,231 @@
+:root {
+    --white-text: #FFFFFF;
+    --black-text: #000000;
+
+    --white-background: #FFFFFF;
+    --navy-background: #094067;
+
+    --blue-button: #3DA9FC;
+    --blue-button-hover: #008df8;
+
+    --crann-logo-green: #73C7A7;
+    --crann-logo-red: #F1676E;
+    --crann-logo-yellow: #FDC17A;
+    --crann-logo-purple: #A1A0D0;
+    --crann-logo-blue: #2496AD;
+    --crann-logo-orange: #F7946B;
+
+    --cta-normal: #ef4565;
+    --cta-hover: #f12349;
+}
+
+/*
+HOME PAGE
+*/
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+header{
+    background-color: var(--navy-background);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+header nav h1{
+    align-self: center;
+    margin-left: 2em;
+    color: white;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    align-self: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    margin-right: 8em;
+    color: white;
+}
+
+.currentPage{
+   text-decoration: none;
+   border-bottom: 2px solid;
+}
+
+.cta{
+    align-self: center;
+    margin-right: 2em;
+}
+
+.cta a{
+    text-decoration: none;
+    color: white;
+}
+
+.headerImage{
+    background-color: var(--crann-logo-red);
+    width: auto;
+    height: 60vh;
+}
+
+.introductionContent{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+.crann-centre-logo{
+    background-color: var(--crann-logo-red);
+    height: 40vh;
+    width: 50%;
+    flex: 1;
+}
+
+.introduction {
+    padding: 1em;
+}
+
+.introduction-content{
+    background-color: var(--white-background);
+    flex: 2;
+    padding: 1em;
+}
+
+.campaign{
+    background-color: var(--navy-background);
+    color: var(--white-text);
+    padding: 1em;
+}
+
+.campaign p:last-child{
+    margin-top: 2em;
+}
+
+p.readmore{
+    margin-top: 2em;
+}
+
+p.readmore a{
+    background-color: var(--blue-button);
+    color: var(--white-text);
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.services-provided{
+    padding: 1em;
+}
+
+.servicesContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.genmodel-image{
+    background-color: var(--crann-logo-red);
+    height: 40vh;
+    width: 50%;
+    flex: 1;
+}
+
+.services-provided-content{
+    flex: 2;
+    padding: 1em;
+}
+
+.services-provided > p{
+    text-align: center;
+}
+
+.homeinfo{
+    background-color: var(--blue-button);
+    color: var(--white-text);
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+}
+
+.commonQuestions{
+    background-color: var(--navy-background);
+    color: var(--white-text);
+    padding: 1em;
+}
+
+.commonQuestions h2{
+    text-align: center;
+}
+
+.commonQuestions details{
+    background-color: var(--blue-button);
+    color: var(--white-text);
+    padding: 2em;
+    margin-top: 2em;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1em;
+}
+
+
+
+footer{
+    background-color: var(--navy-background);
+    color: var(--white-text);
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+footer > div{
+    padding: 1em;
+}
+
+footer h3{
+    text-align: center;
+    font-size: x-large;
+}
+
+footer br{
+    color: white;
+    font-size: 100px;
+}
+
+footer p{
+    text-align: left;
+}
+
+footer .footer-contact-socials{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-contact-socials p a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .footer-pages p a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .footer-pages p:last-child{
+    margin-top: 5em;
+}
+
+
