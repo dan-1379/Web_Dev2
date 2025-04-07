@@ -58,6 +58,10 @@ header nav ul li a{
     color: white;
 }
 
+header nav ul li a:hover{
+    border-bottom: 2px solid;
+}
+
 .currentPage{
    text-decoration: none;
    border-bottom: 2px solid;
@@ -66,7 +70,16 @@ header nav ul li a{
 .cta{
     align-self: center;
     margin-right: 2em;
+    border-radius: 0.5em;
+    padding: 1em;
+    background-color: var(--cta-normal);
+    transition: 0.2s ease-in;
 }
+
+.cta:hover{
+    background-color: var(--cta-hover);
+}
+
 
 .cta a{
     text-decoration: none;
@@ -74,22 +87,18 @@ header nav ul li a{
 }
 
 .headerImage{
-    background-color: var(--crann-logo-red);
     width: auto;
-    height: 60vh;
+    height:70vh;
+    background-image: url("/src/assets/homepage/crann-centre-building-1400w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 .introductionContent{
     display: flex;
     flex-direction: row;
     padding: 1em;
-}
-
-.crann-centre-logo{
-    background-color: var(--crann-logo-red);
-    height: 40vh;
-    width: 50%;
-    flex: 1;
 }
 
 .introduction {
@@ -126,6 +135,7 @@ p.readmore a{
 
 .services-provided{
     padding: 1em;
+    height: 65vh;
 }
 
 .servicesContent{
@@ -134,9 +144,7 @@ p.readmore a{
 }
 
 .genmodel-image{
-    background-color: var(--crann-logo-red);
     height: 40vh;
-    width: 50%;
     flex: 1;
 }
 
@@ -179,13 +187,12 @@ p.readmore a{
     border-radius: 1em;
 }
 
-
-
 footer{
     background-color: var(--navy-background);
     color: var(--white-text);
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     color: white;
@@ -228,4 +235,103 @@ footer .footer-pages p:last-child{
     margin-top: 5em;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    header nav ul li{
+        margin-right: 2em;
+    }
 
+    .cta{
+        display: none;
+    }
+    
+    .headerImage{
+        background-image: url("/src/assets/homepage/crann-centre-building-900w.jpg");
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .crann-centre-logo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    p.readmore{
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 899px) {
+    p{
+        font-size: 2vh;
+    }
+    
+    header nav ul li a{
+        display: none;
+    }
+
+    .cta{
+        display: none;
+    }
+    
+    .headerImage{
+        background-image: url("/src/assets/homepage/crann-centre-building-500w.jpg");
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .crann-centre-logo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .introductionContent{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        height: 70vh;
+    }
+
+    .services-provided{
+        height: 110vh;
+    }
+
+    .servicesContent{
+        flex-direction: column;
+    }
+
+    .genmodel-image{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.readmore{
+        text-align: center;
+    }
+
+    .homeinfo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homeinfo p{
+        margin-top: 2em;
+        font-size: 1em;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer > div{
+        margin-top: 2em;
+        border: 1px solid;
+        padding: 2em;
+    }
+}
