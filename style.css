@@ -489,6 +489,15 @@ ABOUT PAGE
         margin-top: 2em;
     }
 
+    .ourWorkCol1, .ourWorkCol2, .ourWorkCol3{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ourWorkContent{
+        flex-direction: column;
+    }
+
 }
 
 
@@ -646,5 +655,10 @@ ABOUT PAGE
 
     .fundraisingTeamContent div{
         margin-top: 2em;
+    }
+
+    .ourWorkContent{
+        flex-direction: column;
+        align-items: center;
     }
 }
