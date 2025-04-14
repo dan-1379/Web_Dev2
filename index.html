@@ -8,26 +8,38 @@
     <meta name="description" content="Fundraising campaign for The Crann Centre to allow them to continue to provide vital care">
     <meta name="keywords" content="The Crann Centre, Fundraising Campaign for Neuro-physical disabilities">
     <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="Dan Courtney">
     <title>The Crann Centre Fundraising Campaign</title>
     <link rel="stylesheet" href="style.css">
 
-    <link rel="icon" type="image/png" href="/src/assets/homepage/favicon-images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/homepage/favicon-images/favicon.svg" />
-    <link rel="shortcut icon" href="/src/assets/homepage/favicon-images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/homepage/favicon-images/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="/src/assets/homepage/favicon-images/site.webmanifest" />
+    <!--
+    FAVICONS CREATED BY ME USING PHOTOSHOP
+    -->
+    <link rel="icon" type="image/png" href="/src/assets/homepage/favicon-images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/src/assets/homepage/favicon-images/favicon.svg">
+    <link rel="shortcut icon" href="/src/assets/homepage/favicon-images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/homepage/favicon-images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="MyWebSite">
+    <link rel="manifest" href="/src/assets/homepage/favicon-images/site.webmanifest">
+
+    <script>
+        function success(position) {
+            document.getElementById('visives').style.display = 'block';
+            document.getElementById('coordist').innerHTML = position.coords.latitude;
+            document.getElementById('coordLong').innerHTML = position.coords.longitude;
+            document.getElementById('distances').innerHTML = getDistanceFromLatLonInKm(51.59797190000000000, -4.4710873899999980000, position.coords.latitude, position.coords.longitude);
+        }
+    </script>
+
 </head>
 <body>
     <header>
         <nav>
             <h1>Crann Centre Fundraising</h1>
             <ul>
-                <li><a href="" class="currentPage">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="index.html" class="currentPage">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
@@ -41,17 +53,49 @@
                 <div class="menuline3"></div>
             </div>
         </nav>
+        <!--
+            TITLE: THE CRANN CENTRE BUILDING
+            AUTHOR: RIP.IE
+            SITE OWNER: RIP.IE
+            DATE: 20??
+            AVAILABILITY: https://img-dedicated.rip.ie/Crann_Centre_Cork_gallery_1_88d07ee6ea6446575fedc3bdbad934f1b1cb5fcdf36802ea.jpg
+            MODIFIED: ORIGINAL IMAGE TAKEN AND MODIFIED TO MAKE RESPONSIVE
+        -->
         <div class="headerImage"></div>
+        <!-- END OF REFERENCED CONTENT-->
     </header>
 
     <main>
+        <section class="geolocation">
+            <h2>Find us</h2>
+            <button onclick="navigator.geolocation.getCurrentPosition(success)">Get Distance</button>
+            <div id="visives" style="display:none;">
+                <p>You are <span id="distances">0</span> m from The Crann Centre, Cork</p>
+                <p>Your current lat is: <span id="coordist">0</span></p>
+                <p>Your current long is: <span id="coordLong">0</span></p>
+            </div>
+        </section>
+
         <section class="introduction">
             <h2>Who we are?</h2>
             <div class="introductionContent">
                 <div class="crann-centre-logo">
+                    <!--
+                    TITLE: THE CRANN CENTRE LOGO
+                    AUTHOR: THE CRANN CENTRE
+                    SITE OWNER: THE CRANN CENTRE
+                    DATE: 20??
+                    AVAILABILITY: data:image/png;base64,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
+                    MODIFIED: ORIGINAL IMAGE TAKEN AND MODIFIED TO MAKE RESPONSIVE
+                    -->
                     <picture>
-                        <img src="/src/assets/homepage/crann-centre-logo.png" alt="">
+                        <img 
+                        srcset="src/assets/homepage/crann-centre-logo-480w.png 480w, src/assets/homepage/crann-centre-logo-800w.png 800w"
+                        sizes="(max-width: 600px) 300px, 400px"
+                        src="/src/assets/homepage/Crann-Model-of-Care.jpg" 
+                        alt= "The Crann Centre Logo">                    
                     </picture>
+                    <!-- END OF REFERENCED CONTENT-->
                 </div>
                 <div class="introduction-content">
                     <p>
@@ -74,23 +118,40 @@
             <h2>Services Provided by Crann</h2>
             <div class="servicesContent">
                 <div class="genmodel-image">
+                    <!--
+                    TITLE: THE CRANN CENTRE MODEL OF CARE
+                    AUTHOR: THE CRANN CENTRE
+                    SITE OWNER: THE CRANN CENTRE
+                    DATE: 20??
+                    AVAILABILITY: https://cranncentre.ie/wp-content/uploads/2023/05/Crann-Model-of-Care.png
+                    MODIFIED: ORIGINAL IMAGE TAKEN AND MODIFIED TO MAKE RESPONSIVE
+                    -->
                     <picture>
-                        <img src="/src/assets/homepage/Crann-Model-of-Care.jpg" alt="">
+                        <img 
+                        srcset="src/assets/homepage/Crann-Model-of-Care-480w.jpg 480w, src/assets/homepage/Crann-Model-of-Care-800w.jpg 800w"
+                        sizes="(max-width: 600px) 300px, 500px"
+                        src="/src/assets/homepage/Crann-Model-of-Care.jpg" 
+                        alt="The Crann Centre Model of Care Graphic">
                     </picture>
+                    <!-- END OF REFERENCED CONTENT-->
                 </div>
                 <div class="services-provided-content">
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac malesuada neque. Quisque a condimentum mauris, vitae vestibulum elit. Sed felis lectus, tempor in sodales in, aliquet eget dolor. Morbi ac pulvinar tellus, ac porta enim. Praesent magna quam, porttitor a turpis nec, dignissim pellentesque lacus. Quisque eu tincidunt nulla. Suspendisse ultricies accumsan convallis. In a nibh et dolor egestas commodo. Vestibulum malesuada ultricies porta. Cras nec mauris justo. Curabitur placerat nisl a dapibus sollicitudin. Maecenas scelerisque rutrum aliquet. Fusce vel vehicula lorem, a maximus lacus. Proin sagittis euismod nunc vel rutrum.
                     </p>
+                    <p class="readmore"><a href="#">Read more</a></p>
                 </div>
+                
             </div>
-            <p class="readmore"><a href="#">Read more</a></p>
             </section>
 
         <section class="homeinfo">
-            <p>12 Years Experience</p>
-            <p>11,250 Clients Helped</p>
-            <p>2,126 Volunteers</p>
+            <h2>Some Fun Facts</h2>
+            <div class="homeInfoFacts">
+                <p>12 Years Experience</p>
+                <p>11,250 Clients Helped</p>
+                <p>2,126 Volunteers</p>   
+            </div>
         </section>
 
         <section class="commonQuestions">

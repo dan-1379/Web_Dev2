@@ -103,6 +103,15 @@ header nav ul li a:hover{
     color: white;
 }
 
+/*
+    TITLE: THE CRANN CENTRE BUILDING
+    AUTHOR: RIP.IE
+    SITE OWNER: RIP.IE
+    DATE: 20??
+    AVAILABILITY: https://img-dedicated.rip.ie/Crann_Centre_Cork_gallery_1_88d07ee6ea6446575fedc3bdbad934f1b1cb5fcdf36802ea.jpg
+    MODIFIED: ORIGINAL IMAGE TAKEN AND MODIFIED TO MAKE RESPONSIVE
+*/
+
 .headerImage{
     width: auto;
     height:70vh;
@@ -111,6 +120,26 @@ header nav ul li a:hover{
     background-size: cover;
 }
 
+/* END OF REFERENCED CONTENT*/
+
+.geolocation{
+    padding: 1em;
+    color: var(--white-text);
+    background-color: var(--navy-background);
+    text-align: center;
+}
+
+.geolocation button{
+    padding: 2em;
+    border-radius: 0.5em;
+    background-color: var(--blue-button);
+    color: var(--white-text);
+    transition: 0.2s ease-in;
+}
+
+.geolocation button:hover{
+    background-color: var(--blue-button-hover);
+}
 
 .introductionContent{
     display: flex;
@@ -161,7 +190,6 @@ p.readmore a{
 }
 
 .genmodel-image{
-    height: 40vh;
     flex: 1;
 }
 
@@ -178,9 +206,13 @@ p.readmore a{
     background-color: var(--blue-button);
     color: var(--white-text);
     padding: 1em;
+    font-size: x-large;
+    text-align: center;
+}
+
+.homeInfoFacts{
     display: flex;
     justify-content: space-around;
-    font-size: x-large;
 }
 
 .commonQuestions{
@@ -207,7 +239,6 @@ p.readmore a{
 footer{
     background-color: var(--navy-background);
     color: var(--white-text);
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -265,7 +296,99 @@ footer .footer-pages p:last-child{
     flex-direction: column;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1199px) {
+/*
+ABOUT PAGE
+*/
+.AboutheaderImage{
+    width: auto;
+    height:70vh;
+    background-image: url("/src/assets/homepage/crann-centre-people-outside-1400w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.relativePosition{
+    background-color: var(--crann-logo-green);
+    padding: 5em;
+    border-radius: 20em;
+    height: 400px;
+    width: 400px;
+    color: var(--white-text);
+    position: absolute;
+    top: 20%;
+    left: -5%;
+    text-align: center;
+    align-content: center;
+}
+
+.aboutIntroduction{
+    background-color: var(--white-background);
+    color: var(--black-text);
+    margin-top: 5em;
+    padding: 1em;
+}
+
+.aboutCrann{
+    background-color: var(--navy-background);
+    color: var(--white-text);
+    padding: 1em;
+}
+
+.aboutCrannContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutFundraisingTeam{
+    background-color: var(--white-background);
+    color: var(--black-text);
+    padding: 1em;
+}
+
+.fundraisingTeamContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.teamPlaceholder{
+    background-color: var(--blue-button);
+    width: 400px;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+.teamPlaceholder:hover{
+    background-color: var(--blue-button-hover);
+}
+
+.ourWork{
+    background-color: var(--navy-background);
+    color: var(--white-text);
+    padding: 1em;
+    font-size: large;
+}
+
+.ourWorkContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ourWorkCol1 > div, .ourWorkCol2 > div, .ourWorkCol3 > div{
+    background-color: var(--blue-button);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+    text-align: center;
+    width: 25em;
+    height: 8em;
+    align-content: center;
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 1199px) {
     header nav ul li{
         margin-right: 2em;
     }
@@ -277,9 +400,39 @@ footer .footer-pages p:last-child{
     .cta{
         display: none;
     }
+
+/*
+    TITLE: THE CRANN CENTRE BUILDING
+    AUTHOR: RIP.IE
+    SITE OWNER: RIP.IE
+    DATE: 20??
+    AVAILABILITY: https://img-dedicated.rip.ie/Crann_Centre_Cork_gallery_1_88d07ee6ea6446575fedc3bdbad934f1b1cb5fcdf36802ea.jpg
+    MODIFIED: ORIGINAL IMAGE TAKEN AND MODIFIED TO MAKE RESPONSIVE
+*/
     
     .headerImage{
         background-image: url("/src/assets/homepage/crann-centre-building-900w.jpg");
+    }
+
+/* END OF REFERENCED CONTENT */
+
+    .geolocation{
+        padding: 1em;
+        color: var(--white-text);
+        background-color: var(--navy-background);
+        text-align: center;
+    }
+
+    .geolocation button{
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: var(--blue-button);
+        color: var(--white-text);
+        transition: 0.2s ease-in;
+    }
+
+    .geolocation button:hover{
+        background-color: var(--blue-button-hover);
     }
 
     h2{
@@ -295,10 +448,51 @@ footer .footer-pages p:last-child{
     p.readmore{
         text-align: center;
     }
+
+    .services-provided{
+        height: 100vh;
+    }
+
+    .servicesContent{
+        flex-direction: column;
+    }
+
+    /*
+    ABOUT PAGE
+    */
+    .AboutheaderImage{
+        width: auto;
+        height:70vh;
+        background-image: url("/src/assets/homepage/crann-centre-people-outside-900w.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .relativePosition{
+        width: 200px;
+        height: 200px;
+        bottom: 0;
+    }
+
+    .aboutCrannContent{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fundraisingTeamContent{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .fundraisingTeamContent div{
+        margin-top: 2em;
+    }
+
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 799px) {
+@media screen and (min-width: 300px) and (max-width: 699px) {
     p{
         font-size: 2vh;
     }
@@ -315,9 +509,40 @@ footer .footer-pages p:last-child{
         display: block;
         margin: 1em;
     }
+
+/*
+    TITLE: THE CRANN CENTRE BUILDING
+    AUTHOR: RIP.IE
+    SITE OWNER: RIP.IE
+    DATE: 20??
+    AVAILABILITY: https://img-dedicated.rip.ie/Crann_Centre_Cork_gallery_1_88d07ee6ea6446575fedc3bdbad934f1b1cb5fcdf36802ea.jpg
+    MODIFIED: ORIGINAL IMAGE TAKEN AND MODIFIED TO MAKE RESPONSIVE
+*/
     
     .headerImage{
         background-image: url("/src/assets/homepage/crann-centre-building-500w.jpg");
+    }
+
+/* END OF REFERENCED CONTENT */
+
+    .geolocation{
+        padding: 1em;
+        color: var(--white-text);
+        background-color: var(--navy-background);
+        text-align: center;
+    }
+
+    .geolocation button{
+        width: 90%;
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: var(--blue-button);
+        color: var(--white-text);
+        transition: 0.2s ease-in;
+    }
+
+    .geolocation button:hover{
+        background-color: var(--blue-button-hover);
     }
 
     h2{
@@ -325,7 +550,7 @@ footer .footer-pages p:last-child{
     }
 
     .introduction{
-        height: 100vh;
+        height: 80vh;
     }
 
     .crann-centre-logo{
@@ -342,7 +567,7 @@ footer .footer-pages p:last-child{
     }
 
     .services-provided{
-        height: 120vh;
+        height: 100vh;
     }
 
     .servicesContent{
@@ -359,7 +584,7 @@ footer .footer-pages p:last-child{
         text-align: center;
     }
 
-    .homeinfo{
+    .homeInfoFacts{
         flex-direction: column;
         text-align: center;
     }
@@ -393,5 +618,33 @@ footer .footer-pages p:last-child{
 
     .footer-logo picture{
         order: 1;
+    }
+
+    /*
+    ABOUT PAGE
+    */
+    .AboutheaderImage{
+        width: auto;
+        background-image: url("/src/assets/homepage/crann-centre-people-outside-500w.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .relativePosition{
+       display: none;
+    }
+
+    .aboutCrannContent{
+        flex-direction: column;
+    }
+
+    .fundraisingTeamContent{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .fundraisingTeamContent div{
+        margin-top: 2em;
     }
 }
