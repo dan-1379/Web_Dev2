@@ -595,6 +595,9 @@ footer .footer-pages p:last-child{
     right: 10%;
 }
 
+/* CONTACT PAGE - CONTACT.HTML (DESKTOP)*/
+
+
 /*MEDIA QUERY 1*/
 @media screen and (min-width: 700px) and (max-width: 1199px) {
     /*HOME PAGE - INDEX.HTML (MEDIA QUERY 1)*/
