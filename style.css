@@ -32,31 +32,31 @@ header{
     background-color: var(--navy-background);
 }
 
-header nav{
+header > nav{
     display: flex;
     justify-content: space-between;
     font-size: large;
 }
 
-header nav h1{
+header > nav h1{
     align-self: center;
     margin-left: 2em;
     color: white;
 }
 
-header nav ul{
+header > nav ul{
     display: flex;
     list-style-type: none;
     align-self: center;
 }
 
-header nav ul li a{
+header > nav ul li a{
     text-decoration: none;
     margin-right: 8em;
     color: white;
 }
 
-header nav ul li a:hover{
+header > nav ul li a:hover{
     border-bottom: 2px solid;
 }
 
@@ -99,6 +99,29 @@ header nav ul li a:hover{
 .cta a{
     text-decoration: none;
     color: white;
+}
+
+.mobileNavMenu{
+    background-color: var(--navy-background);
+}
+
+.mobileNavMenu ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.mobileNavMenu ul li{
+    padding: 1em;
+}
+
+.mobileNavMenu ul li a{
+    text-decoration: none;
+    margin-right: 8em;
+    color: white;
+}
+
+.mobileNavMenu ul li a:hover{
+    border-bottom: 2px solid;
 }
 
 /*
@@ -714,6 +737,125 @@ iframe{
     height: 60vh;
 }
 
+/*DONATIONS PAGE - DONATIONS.HTML (DESKTOP)*/
+.donateHeaderImage{
+    width: auto;
+    height:80vh;
+    background-image: url("/src/assets/homepage/crann-centre-people-outside-playground-image-1400w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.donateRelativePosition{
+    background-color: var(--crann-logo-green);
+    padding: 5em;
+    border-radius: 20em;
+    height: 400px;
+    width: 400px;
+    color: var(--white-text);
+    position: absolute;
+    top: 20%;
+    left: -5%;
+    text-align: center;
+    align-content: center;
+}
+
+.donationContainer{
+    background-color: var(--white-background);
+    width: 30%;
+    padding: 1em;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+}
+
+.donationContainer h2, .donationContainer p{
+    text-align: center;
+}
+
+.chooseAmount{
+    background-color: var(--crann-logo-green);
+    color: var(--white-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.chooseAmountCircles{
+    display: flex;
+}
+
+.circle{
+    width: 2em;
+    height: 2em;
+    background-color: var(--white-background);
+    border-radius: 50%;
+    margin-right: 2em;
+}
+
+.paymentTimeSelection{
+    display: flex;
+    padding: 2em;
+   margin-right: auto;
+   margin-left: auto;
+   text-align: center;
+   color: var(--white-background);
+}
+
+.oneTimePayment{
+    background-color: var(--crann-logo-green);
+    padding: 0.1em;
+    width: 50%;
+}
+
+.monthlyTimePayment{
+    background-color: lightgrey;
+    width: 50%;
+}
+
+.valueSelection{
+    display: flex;
+    justify-content: space-around;
+}
+
+.value{
+    text-align: center;
+    border: 2px solid #6C6C6C;
+    padding: 2em;
+    border-radius: 10%;
+    transition: 0.5s ease-in-out;
+}
+
+.value:hover{
+    background-color: var(--crann-logo-green);
+    color: var(--white-text);
+    border: 2px solid white;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContainer button{
+    background-color: var(--blue-button);
+    color: var(--white-text);
+    transition: 0.5s ease-in-out;
+    width: 90%;
+    padding: 2em;
+    border: none;
+    border-radius: 1em;
+    font-size: large;
+    margin-top: 2em;
+    align-content: center;
+}
+
+.donationContainer button:hover{
+    background-color: var(--blue-button-hover);
+    scale: 1.01;
+}
 
 /*MEDIA QUERY 1*/
 @media screen and (min-width: 700px) and (max-width: 1199px) {
@@ -906,6 +1048,27 @@ iframe{
 
     .socialMediaContent > div{
         margin-right: 2em;
+    }
+
+    /*DONATIONS PAGE - DONATIONS.HTML (MEDIA QUERY 1)*/
+    .AboutheaderImage{
+        width: auto;
+        height:70vh;
+        background-image: url("/src/assets/homepage/crann-centre-people-outside-playground-image-800w.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .donateRelativePosition{
+        width: 200px;
+        height: 200px;
+        bottom: 0;
+    }
+
+    .donationContainer{
+        width: 50%;
+        top: 20%;
+        right: 1%;
     }
 }
 
@@ -1191,5 +1354,24 @@ iframe{
         margin-right: auto;
         margin-left: auto;
         width: 90%;
+    }
+
+    /*DONATIONS PAGE - DONATIONS.HTML (MEDIA QUERY 2)*/
+    .AboutheaderImage{
+        width: auto;
+        background-image: url("/src/assets/homepage/crann-centre-people-outside-playground-image-480w.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .donateRelativePosition{
+        display: none;
+     }
+
+     .donationContainer{
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+        position: static;
     }
 }

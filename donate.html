@@ -12,16 +12,6 @@
     <meta name="author" content="Dan Courtney">
     <title>Contact The Crann Centre Fundraising Campaign</title>
     <link rel="stylesheet" href="style.css">
-    <!--
-            TITLE: FONT AWESOME ICONS
-            AUTHOR: FONT AWESOME
-            SITE OWNER: FONT AWESOME
-            DATE: 20??
-            AVAILABILITY: https://fontawesome.com/search?q=heart&o=r&s=solid&ip=classic
-            MODIFIED: NO MODIFICATIONS MADE. USING ICONS
-        -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!--END OF REFERENCED CONTENT-->
 
     <!--
     FAVICONS CREATED BY ME USING PHOTOSHOP
@@ -34,9 +24,6 @@
     <link rel="manifest" href="/src/assets/homepage/favicon-images/site.webmanifest">
 </head>
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
-    
     <header>
         <nav>
             <h1>Crann Centre Fundraising</h1>
@@ -44,18 +31,32 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="currentPage">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="cta">
-                <a href="#">Donate now</a>
+                <a href="donate.html">Donate now</a>
             </div>
 
-            <div class="hiddenMenu">
-                <div class="menuline1"></div>
-                <div class="menuline2"></div>
-                <div class="menuline3"></div>
-            </div>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+                <div class="hiddenMenu" onclick="myFunction()">
+                    <div class="menuline1"></div>
+                    <div class="menuline2"></div>
+                    <div class="menuline3"></div>
+                </div>
+            <!-- </a> -->
         </nav>
+
+        <!-- <div class="mobileNavMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div> -->
+
+
         <!--
             TITLE: Celebrating a Year of Accessible Play at our Playground & Leisure Area! | Crann Centre Ireland
             AUTHOR: THE CRANN CENTRE
@@ -64,137 +65,49 @@
             AVAILABILITY: https://cranncentre.ie/wp-content/uploads/2023/07/Copy-of-20220702_131300.jpg
             MODIFIED: ORIGINAL IMAGE TAKEN AND MODIFIED MAKE RESPONSIVE
         -->
-        <div class="contactHeaderImage"></div>
+        <div class="donateHeaderImage"></div>
         <!-- END OF REFERENCED CONTENT-->
-        <div class="contactRelativePosition">
-            <h2>Contact us</h2>
+        <div class="donateRelativePosition">
+            <h2>Donations</h2>
         </div>
     </header>
-
+    
     <main>
-        <section class="getInvolved">
-        <!--
-            TITLE: Get Involved
-            AUTHOR: THE CRANN CENTRE
-            SITE OWNER: THE CRANN CENTRE
-            DATE: 20??
-            AVAILABILITY: https://cranncentre.ie/get-involved/
-            MODIFIED: ORIGINAL IMAGE TAKEN AND MODIFIED MAKE RESPONSIVE
-        -->
-            <h2>Get Involved</h2>
-            <div class="getInvolvedContent">
-                <div class="getInvolvedDonation">
-                    <picture>
-                        <img srcset="src/assets/homepage/crann-centre-family-donate-image-480w.jpg 480w,
-                        src/assets/homepage/crann-centre-family-donate-image-800w.jpg 800w"
-                        sizes="(max-width: 600px) 480px, 800px"
-                        src="/src/assets/homepage/crann-centre-family-donate-image-800w.jpg"
-                        alt="Image of family holding icecreams">
-                    </picture>
-                    <h3>Donate</h3>
-                    <p>Your donation will support families with Neuro-physical disabilities.</p>
-                    <button>Donate</button>
+        <section class="donationContainer">
+            <h2>Donate to The Crann Centre</h2>
+            <p>Help us to continue to provide vital support to The Crann Centre</p>
+            <div class="donateAmountSelection">
+                <div class="chooseAmount">
+                    <h3>Choose amount</h3>
+                    <div class="chooseAmountCircles">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
                 </div>
 
-                <div class="getInvolvedVolunteer">
-                    <picture>
-                        <img srcset="src/assets/homepage/crann-centre-people-painting-volunteer-image-480w.jpg 480w,
-                        src/assets/homepage/crann-centre-people-painting-volunteer-image-800w.jpg 800w"
-                        sizes="(max-width: 600px) 480px, 800px"
-                        src="/src/assets/homepage/crann-centre-people-painting-volunteer-image-800w.jpg"
-                        alt="Image of family holding icecreams">
-                    </picture>
-                    <h3>Volunteering</h3>
-                    <p>Provide vital support to families and clients.</p>
-                    <button>Volunteer</button>
+                <div class="paymentTimeSelection">
+                    <div class="oneTimePayment">
+                        <h4>One-time</h4>
+                    </div>
+
+                    <div class="monthlyTimePayment">
+                        <h4>Monthly</h4>
+                    </div>
+                </div>
+
+                <div class="valueSelection">
+                    <div class="value">&euro;10</div>
+                    <div class="value">&euro;20</div>
+                    <div class="value">&euro;50</div>
                 </div>
             </div>
-            <!--END OF REFERENCED CONTENT-->
-        </section>
-
-        <section class="getInTouch">
-        <!--
-            TITLE: FONT AWESOME ICONS
-            AUTHOR: FONT AWESOME
-            SITE OWNER: FONT AWESOME
-            DATE: 20??
-            AVAILABILITY: https://fontawesome.com/search?q=heart&o=r&s=solid&ip=classic
-            MODIFIED: NO MODIFICATIONS MADE. USING ICONS
-        -->
-            <h2>Get in touch</h2>
-            <div class="getInTouchContent">
-                <div class="getInTouchAddress">
-                    <div class="getInTouchAddressIcon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h3>Address</h3>
-                    <p>216 Grosvenor Place, Cork City, Ireland V87 263E</p>
-                </div>
-
-                <div class="getInTouchPhone">
-                    <div class="getInTouchPhoneIcon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <h3>Phone</h3>
-                    <p>+(353) 864287639</p>
-                </div>
-
-                <div class="getInTouchEmail">
-                    <div class="getInTouchEmailIcon">
-                        <i class="fa-solid fa-inbox"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>info@fundraising.com</p>
-                </div>
-            </div>
-        <!--END OF REFERENCED CONTENT-->
-        </section>
-
-        <section class="socialMedia">
-            <h2>Find us on Social Media</h2>
-            <div class="socialMediaContent">
-            <!--
-                TITLE: THE CRANN CENTRE FACEBOOK PAGE
-                AUTHOR: THE CRANN CENTRE
-                SITE OWNER: FACEBOOK
-                DATE: 20??
-                AVAILABILITY: https://www.facebook.com/cranncentre.IRL
-                MODIFIED: NO MODIFICATIONS MADE. USING EMBEDDED FACEBOOK PAGE
-            -->
-                <div class="fb-page" 
-                    data-href="https://www.facebook.com/cranncentre.IRL" 
-                    data-tabs="timeline" data-width="" data-height="" 
-                    data-small-header="false" data-adapt-container-width="true" 
-                    data-hide-cover="false" data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/cranncentre.IRL" 
-                        class="fb-xfbml-parse-ignore">
-                        <a href="https://www.facebook.com/cranncentre.IRL">Crann Centre</a>
-                    </blockquote>
-                </div>
-            <!--END OF REFERENCED CONTENT-->
             
-            <!--
-                TITLE: THE CRANN CENTRE YOUTUBE CHANNEL
-                AUTHOR: THE CRANN CENTRE
-                SITE OWNER: YOUTUBE
-                DATE: 20??
-                AVAILABILITY: https://www.youtube.com/watch?v=Oi-qrK0Qw0o
-                MODIFIED: NO MODIFICATIONS MADE. USING EMBEDDED YOUTUBE PAGE
-            -->
-                <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/Oi-qrK0Qw0o?si=f0nDLsz16Dev-0sq" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
-                </iframe>
+            <div class="buttonContainer">
+                <button>Next</button>
             </div>
-            <!--END OF REFERENCED CONTENT-->
         </section>
     </main>
-
-    <hr>
 
     <footer>
         <div class="footer-contact">
@@ -255,5 +168,20 @@
             <p>Copyright &copy; PLACEHOLDER TEXT | Lorem Ipsum Dolor Sit Amet</p>
         </div>
     </footer>
+
+    <!-- <script>
+        function openMenu() {
+
+            var x = document.getElementById("mobileNavMenu");
+
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } 
+            
+            else {
+                x.style.display = "block";
+            }
+        }
+    </script> -->
 </body>
 </html>
