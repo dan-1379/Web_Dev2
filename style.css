@@ -19,9 +19,7 @@
     --cta-hover: #f12349;
 }
 
-/*
-HOME PAGE
-*/
+/* HOME PAGE - INDEX.HTML (DESKTOP)*/
 
 body{
     padding: 0;
@@ -296,9 +294,7 @@ footer .footer-pages p:last-child{
     flex-direction: column;
 }
 
-/*
-ABOUT PAGE
-*/
+/* ABOUT PAGE - ABOUT.HTML (DESKTOP) */
 .AboutheaderImage{
     width: auto;
     height:70vh;
@@ -343,8 +339,8 @@ ABOUT PAGE
 .aboutCrannContent picture img{
     display: block;
     margin: 0 auto;
-    /* max-width: 100%; */
     object-fit: contain;
+    padding: 2em;
 }
 
 .aboutFundraisingTeam{
@@ -439,35 +435,169 @@ ABOUT PAGE
 .ourWorkCol1 > div:nth-child(1):hover{
     background-color: var(--crann-logo-red);
     scale: 1.05;
+    box-shadow: 0px 0px 30px grey;
 }
 
 .ourWorkCol1 > div:nth-child(2):hover{
     background-color: var(--crann-logo-blue);
     scale: 1.05;
+    box-shadow: 0px 0px 30px grey;
 }
 
 .ourWorkCol2 > div:nth-child(1):hover{
     background-color: var(--crann-logo-green);
     scale: 1.05;
+    box-shadow: 0px 0px 30px grey;
 }
 
 .ourWorkCol2 > div:nth-child(2):hover{
     background-color: var(--crann-logo-purple);
     scale: 1.05;
+    box-shadow: 0px 0px 30px grey;
 }
 
 .ourWorkCol3 > div:nth-child(1):hover{
     background-color: var(--crann-logo-orange);
     scale: 1.05;
+    box-shadow: 0px 0px 30px grey;
 }
 
 .ourWorkCol3 > div:nth-child(2):hover{
     background-color: var(--crann-logo-yellow);
     scale: 1.05;
+    box-shadow: 0px 0px 30px grey;
 }
 
+/* SERVICES PAGE - SERVICES.HTML (DESKTOP)*/
+.servicesHeaderImage{
+    width: auto;
+    height:70vh;
+    background-image: url("/src/assets/homepage/crann-centre-services-image-1400w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
+.servicesRelativePosition{
+    background-color: var(--crann-logo-red);
+    padding: 5em;
+    border-radius: 20em;
+    height: 400px;
+    width: 400px;
+    color: var(--white-text);
+    position: absolute;
+    top: 20%;
+    left: -5%;
+    text-align: center;
+    align-content: center;
+}
+
+.servicesDescription{
+    padding: 3em;
+    background-color: var(--navy-background);
+    color: var(--white-text);
+}
+
+.servicesProvided{
+    padding: 1em;
+}
+
+.servicesProvided div{
+    color: var(--white-text);
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 1em;
+}
+
+.servicesProvided i{
+    color: var(--white-text);
+    font-size: 2em;
+}
+
+.psychService{
+    background-color: var(--crann-logo-green);
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.psychContent{
+    display: none;
+   transition: 0.5s ease-in-out;
+}
+
+.psychService:hover{
+    box-shadow: 0px 0px 10px grey;
+    scale: 1.01;
+}
+
+.healthService{
+    background-color: var(--crann-logo-red);
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.healthService:hover{
+    box-shadow: 0px 0px 10px grey;
+    scale: 1.01;
+}
+
+.educationService{
+    background-color: var(--crann-logo-yellow);
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.educationService:hover{
+    box-shadow: 0px 0px 10px grey;
+    scale: 1.01;
+}
+
+.mobilityService{
+    background-color: var(--crann-logo-purple);
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.mobilityService:hover{
+    box-shadow: 0px 0px 10px grey;
+    scale: 1.01;
+}
+
+.livingService{
+    background-color: var(--crann-logo-blue);
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.livingService:hover{
+    box-shadow: 0px 0px 10px grey;
+    scale: 1.01;
+}
+
+.socialService{
+    background-color: var(--crann-logo-orange);
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.socialService:hover{
+    box-shadow: 0px 0px 10px grey;
+    scale: 1.01;
+}
+
+.fa-heart, .fa-stethoscope, .fa-graduation-cap,
+.fa-wheelchair, .fa-house, .fa-users{
+    position: absolute;
+    top: 35%;
+    right: 10%;
+}
+
+/*MEDIA QUERY 1*/
 @media screen and (min-width: 700px) and (max-width: 1199px) {
+    /*HOME PAGE - INDEX.HTML (MEDIA QUERY 1)*/
     header nav ul li{
         margin-right: 2em;
     }
@@ -536,9 +666,8 @@ ABOUT PAGE
         flex-direction: column;
     }
 
-    /*
-    ABOUT PAGE
-    */
+
+    /*ABOUT PAGE - ABOUT.HTML (MEDIA QUERY 1)*/
     .AboutheaderImage{
         width: auto;
         height:70vh;
@@ -614,11 +743,26 @@ ABOUT PAGE
         object-fit: contain;
     }
 
+    /*SERVICES PAGE - SERVICES.HTML (MEDIA QUERY 1)*/
+    .servicesHeaderImage{
+        width: auto;
+        height:70vh;
+        background-image: url("/src/assets/homepage/crann-centre-services-image-800w.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .servicesRelativePosition{
+        width: 200px;
+        height: 200px;
+        bottom: 0;
+    }
 
 }
 
-
+/*MEDIA QUERY 2*/
 @media screen and (min-width: 300px) and (max-width: 699px) {
+    /*HOME PAGE - INDEX.HTML (MEDIA QUERY 2)*/
     p{
         font-size: 2vh;
     }
@@ -746,9 +890,7 @@ ABOUT PAGE
         order: 1;
     }
 
-    /*
-    ABOUT PAGE
-    */
+    /*ABOUT PAGE - ABOUT.HTML (MEDIA QUERY 2)*/
     .AboutheaderImage{
         width: auto;
         background-image: url("/src/assets/homepage/crann-centre-people-outside-500w.jpg");
@@ -762,6 +904,13 @@ ABOUT PAGE
 
     .aboutCrannContent{
         flex-direction: column;
+    }
+
+    .aboutCrannContent picture img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        object-fit: contain;
     }
 
     .aboutFundraisingTeam{
@@ -818,15 +967,25 @@ ABOUT PAGE
     .ourWorkCol1 > div, .ourWorkCol2 > div, .ourWorkCol3 > div{
         margin-right: auto;
         margin-left: auto;
-        width: 90%;
         height: 10em;
         align-content: center;
     }
 
-    .aboutCrannContent picture img{
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        object-fit: contain;
+    /*SERVICES PAGE - SERVICES.HTML (MEDIA QUERY 2)*/
+    .servicesHeaderImage{
+        width: 100%;
+        height: 50vh;
+        background-image: url("/src/assets/homepage/crann-centre-services-image-480w.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width:100%;
+    }
+
+    .servicesRelativePosition{
+        display: none;
+     }
+
+     .servicesDescription{
+        padding: 1em;
     }
 }
