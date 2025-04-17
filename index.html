@@ -30,10 +30,28 @@
             document.getElementById('coordLong').innerHTML = position.coords.longitude;
             document.getElementById('distances').innerHTML = getDistanceFromLatLonInKm(51.59797190000000000, -4.4710873899999980000, position.coords.latitude, position.coords.longitude);
         }
+
+        function openHiddenMenu() {
+            //menu = document.getElementById("mobileMenu");
+
+            x = document.getElementById('mobileMenu');
+
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } 
+            
+            else {
+                x.style.display = 'none';
+            }
+    }
     </script>
 
 </head>
 <body>
+    <a href="#">
+        <span class="pageTopButton">Top</span>
+    </a>
+    
     <header>
         <nav>
             <h1>Crann Centre Fundraising</h1>
@@ -47,12 +65,22 @@
                 <a href="donate.html">Donate now</a>
             </div>
 
-            <div class="hiddenMenu">
+            <button onclick="openHiddenMenu()" class="hiddenMenu" id = "mobileMenuButton">
                 <div class="menuline1"></div>
                 <div class="menuline2"></div>
                 <div class="menuline3"></div>
-            </div>
+            </button>
         </nav>
+        
+        <div class="mobileNavMenu" id = "mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </div>
         <!--
             TITLE: THE CRANN CENTRE BUILDING
             AUTHOR: RIP.IE
