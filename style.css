@@ -768,6 +768,7 @@ iframe{
     position: absolute;
     top: 15%;
     right: 10%;
+    border-radius: 1%;
 }
 
 .donationContainer h2, .donationContainer p{
