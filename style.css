@@ -891,6 +891,88 @@ iframe{
     scale: 1.01;
 }
 
+.fundAllocation{
+    padding: 1em;
+    background-color: var(--white-background);
+    color: var(--black-text);
+}
+
+.fundAllocationContent{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.fundPieChart{
+    width: 30em;
+    height: 30em;
+    background-image: conic-gradient(var(--crann-logo-green) 0deg, var(--crann-logo-green) 180deg, var(--crann-logo-red) 180deg, var(--crann-logo-red) 200deg, var(--crann-logo-purple) 200deg, var(--crann-logo-purple) 290deg, var(--crann-logo-yellow) 290deg,  var(--crann-logo-yellow) 360deg);
+    border-radius: 50%
+}
+
+.pieChartKey{
+    font-size: large;
+   text-align: center;
+}
+
+.supportKey{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.supportKeyColor{
+    background-color: var(--crann-logo-green);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-right: 5em;
+}
+
+.eventsKey{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.eventsKeyColor{
+    background-color: var(--crann-logo-red);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-right: 5em;
+}
+
+.marketingKey{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.marketingKeyColor{
+    background-color: var(--crann-logo-purple);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-right: 5em;
+}
+
+.wagesKey{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.wagesKeyColor{
+    background-color: var(--crann-logo-yellow);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-right: 5em;
+}
+
+
+
 /*MEDIA QUERY 1*/
 @media screen and (min-width: 700px) and (max-width: 1199px) {
     /*HOME PAGE - INDEX.HTML (MEDIA QUERY 1)*/
@@ -1418,5 +1500,24 @@ iframe{
         margin-right: auto;
         margin-left: auto;
         width: 50%;
+    }
+
+    .fundAllocation{
+        background-color: var(--navy-background);
+        color: var(--white-text);
+    }
+
+    .fundAllocationContent{
+        flex-direction: column;
+    }
+
+    .pieChartKey, .fundPieChart{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .fundPieChart{
+        width: 50vh;
+        height: 50vh;
     }
 }
