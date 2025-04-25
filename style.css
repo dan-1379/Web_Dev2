@@ -189,6 +189,7 @@ header > nav ul li a:hover{
     display: flex;
     flex-direction: row;
     padding: 1em;
+    align-items: center;
 }
 
 .introduction {
@@ -231,6 +232,7 @@ p.readmore a{
 .servicesContent{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .genmodel-image{
@@ -278,6 +280,16 @@ p.readmore a{
     margin-right: auto;
     margin-left: auto;
     border-radius: 1em;
+}
+
+.commonQuestions details[open]{
+    background-color: var(--blue-button-hover);
+}
+
+.commonQuestions details p{
+    padding: 2em;
+    background-color: var(--blue-button);
+    border-radius: 0.5em;
 }
 
 footer{
@@ -1044,6 +1056,11 @@ iframe{
         flex-direction: column;
     }
 
+    .genmodel-image{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 
     /*ABOUT PAGE - ABOUT.HTML (MEDIA QUERY 1)*/
     .AboutheaderImage{
@@ -1277,9 +1294,9 @@ iframe{
     }
 
     .genmodel-image picture img{
-        width: 400px;
         margin-left: auto;
         margin-right: auto;
+        width: 95%;
     }
 
     p.readmore{
