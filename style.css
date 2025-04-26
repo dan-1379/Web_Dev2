@@ -24,7 +24,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-size: large;
+    font-size: 2vh;
     font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -694,6 +694,12 @@ footer .footer-pages p:last-child{
 
 .getInvolvedContent picture img{
     width: 90%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: 0.5s ease-in-out;
+}
+
+.getInvolvedContent picture img:hover{
+    scale: 1.01;
 }
 
 .getInvolvedContent button{
@@ -747,7 +753,25 @@ footer .footer-pages p:last-child{
     color: var(--black-text);
     padding: 0.3em;
     border-radius: 50%;
+    transition: 0.5s ease-in-out;
 }
+
+.getInTouchContent div:hover i{
+    background-color: var(--black-text);
+    color: var(--white-text);
+}
+
+/* .geoLocationMap{
+    padding: 1em;
+    background-color: var(--white-background);
+    color: var(--black-text);
+}
+
+.geoLocationMapContent{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+} */
 
 .socialMedia{
     padding: 2em;
@@ -919,7 +943,40 @@ iframe{
     width: 30em;
     height: 30em;
     background-image: conic-gradient(var(--crann-logo-green) 0deg, var(--crann-logo-green) 180deg, var(--crann-logo-red) 180deg, var(--crann-logo-red) 200deg, var(--crann-logo-purple) 200deg, var(--crann-logo-purple) 290deg, var(--crann-logo-yellow) 290deg,  var(--crann-logo-yellow) 360deg);
-    border-radius: 50%
+    border-radius: 50%;
+    position: relative;
+}
+
+.supportKeyFigure{
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    font-size: xx-large;
+    color: var(--white-text);
+}
+
+.eventsKeyFigure{
+    position: absolute;
+    top: 85%;
+    left: 37%;
+    font-size: xx-large;
+    color: var(--white-text);
+}
+
+.marketingKeyFigure{
+    position: absolute;
+    top: 55%;
+    left: 16%;
+    font-size: xx-large;
+    color: var(--white-text);
+}
+
+.wagesKeyFigure{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size: xx-large;
+    color: var(--white-text);
 }
 
 .pieChartKey{
@@ -1474,8 +1531,9 @@ iframe{
     .getInTouchContent div{
         margin-right: auto;
         margin-left: auto;
-        width: 50%;
+        width: 90%;
         margin-top: 2em;
+        background-color: var(--blue-button-hover);
     }
 
     .getInTouchContent > div:hover{
