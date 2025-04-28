@@ -91,7 +91,7 @@ header > nav ul li a:hover{
     background-color: var(--blue-button-hover);
 }
 
-.hiddenMenu div{
+.hiddenMenu span{
     height: 0.5em;
     margin: 1em;
     background-color: var(--navy-background);
@@ -1045,6 +1045,10 @@ iframe{
 /*MEDIA QUERY 1*/
 @media screen and (min-width: 700px) and (max-width: 1199px) {
     /*HOME PAGE - INDEX.HTML (MEDIA QUERY 1)*/
+    header > nav{
+        flex-wrap: wrap;
+    }
+
     header nav ul li{
         margin-right: 2em;
     }

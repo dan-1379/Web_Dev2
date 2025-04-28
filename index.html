@@ -31,6 +31,8 @@
             document.getElementById('distances').innerHTML = getDistanceFromLatLonInKm(51.59797190000000000, -4.4710873899999980000, position.coords.latitude, position.coords.longitude);
         }
 
+        // HIDDEN MENU CODE BASED ON GEOLOCATION CODE - ADAPTED TO MAKE AN OPENING MENU
+        
         function openHiddenMenu() {
             //menu = document.getElementById("mobileMenu");
 
@@ -66,9 +68,9 @@
             </div>
 
             <button onclick="openHiddenMenu()" class="hiddenMenu" id = "mobileMenuButton">
-                <div class="menuline1"></div>
-                <div class="menuline2"></div>
-                <div class="menuline3"></div>
+                <span class="menuline1"></span>
+                <span class="menuline2"></span>
+                <span class="menuline3"></span>
             </button>
         </nav>
         
